@@ -53,7 +53,7 @@ nav.main a:hover{color:var(--crimson)}
 
 /* hero */
 .hero{position:relative;min-height:600px;display:flex;align-items:center;color:#fff;background:#2A0B23}
-.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 28%}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--plum) 0%,rgba(58,16,48,.92) 42%,rgba(58,16,48,.45) 75%,rgba(58,16,48,.2) 100%)}
 .hero .wrap{position:relative;z-index:2;padding:5rem 22px;width:100%}
 .hero .kicker{color:#f3b9cd}.hero .kicker::before{background:#f3b9cd}
