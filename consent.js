@@ -68,10 +68,20 @@
     });
   }
 
+  // цели Яндекс.Метрики (отправляются, только если посетитель разрешил статистику)
+  function goal(name) { if (window.ym && window.YM_COUNTER) window.ym(window.YM_COUNTER, 'reachGoal', name); }
+
   document.addEventListener('click', function (e) {
     if (!e.target.closest) return;
     if (e.target.closest('[data-load-map]')) { e.preventDefault(); loadMaps(); }
     if (e.target.closest('[data-cookie-settings]')) { e.preventDefault(); showBanner(); }
+    var a = e.target.closest('a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href');
+    if (href.indexOf('tel:') === 0) goal('phone_click');
+    else if (href.indexOf('mailto:') === 0) goal('email_click');
+    else if (/pricelist\.pdf$/.test(href)) goal('pricelist_download');
+    else if (href.indexOf('yandex.ru/maps/?rtext') !== -1) goal('route_click');
   });
 
   var choice = read();
