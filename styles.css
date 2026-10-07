@@ -18,7 +18,7 @@ p{margin:0 0 1rem}
 a{color:var(--crimson);text-decoration:none}
 img{max-width:100%;display:block}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:54px;padding:0 1.9rem;border-radius:var(--r);font-weight:600;font-size:1.05rem;line-height:1.2;cursor:pointer;border:2px solid transparent;transition:.15s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:54px;padding:0 1.9rem;border-radius:var(--r);font-weight:600;font-size:1.05rem;line-height:1.2;text-align:center;cursor:pointer;border:2px solid transparent;transition:.15s}
 .btn-primary{background:var(--crimson);color:#fff}
 .btn-primary:hover{background:var(--crimson-700)}
 .btn-ghost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.8)}
@@ -375,8 +375,6 @@ header.open .burger .ico-close{display:block}
 .about-facts li{display:flex;gap:.65rem;align-items:flex-start;color:var(--ink);font-size:.95rem;line-height:1.45}
 .about-facts .ico{color:var(--crimson);margin-top:1px}
 .about-text h2{margin-bottom:.8rem}
-.about-quote{margin:1.6rem 0;padding:.2rem 0 .2rem 1.2rem;border-left:3px solid var(--crimson);font-family:var(--serif);font-size:1.22rem;line-height:1.45;color:var(--plum)}
-.about-quote small{display:block;margin-top:.5rem;font-family:var(--sans);font-size:.9rem;color:var(--muted)}
 .about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.8rem;padding-top:1.6rem;border-top:1px solid var(--border)}
 .about-stats .n{font-family:var(--serif);font-size:2.3rem;color:var(--crimson);line-height:1}
 .about-stats small{display:block;color:var(--muted);font-size:.92rem;margin-top:.45rem;line-height:1.35}
@@ -433,3 +431,18 @@ header.open .burger .ico-close{display:block}
 /* footer requisites, inline text links */
 .foot-req{color:#ddcdd5;opacity:.85}
 .text-link{text-decoration:underline;text-underline-offset:3px}
+
+/* documents gallery (scans) */
+.docs-title{margin:3rem 0 0;font-size:1.08rem;color:var(--plum);padding-bottom:.7rem;border-bottom:2px solid var(--rose)}
+.docs-gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:1.4rem;margin-top:1.4rem}
+@media(max-width:960px){.docs-gallery{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.docs-gallery{grid-template-columns:1fr 1fr;gap:1rem}}
+
+/* yandex reviews widget (loaded after cookie consent, like the map) */
+.yrev{background:#fff}
+.yrev-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:3.5rem;align-items:center}
+.yrev-text p{color:var(--muted);max-width:44ch}
+.yrev-actions{margin-top:1.6rem}
+.yrev-widget{min-height:720px;max-width:640px;width:100%;justify-self:end}
+@media(max-width:960px){.yrev-grid{grid-template-columns:1fr;gap:2rem}.yrev-widget{justify-self:stretch;max-width:none}}
+@media(max-width:560px){.yrev-widget{min-height:600px}.yrev-actions .btn{width:100%;justify-content:center}}

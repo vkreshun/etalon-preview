@@ -1,4 +1,4 @@
-/* Согласие на cookie: баннер, Яндекс.Метрика и карты Яндекса загружаются только после согласия.
+/* Согласие на cookie: баннер, Яндекс.Метрика, карта и виджет отзывов Яндекса загружаются только после согласия.
    Выбор хранится в localStorage («all» — все, «necessary» — только необходимые). */
 (function () {
   var KEY = 'etalon-cookie-consent';
@@ -52,7 +52,7 @@
     b.setAttribute('aria-label', 'Согласие на использование файлов cookie');
     b.innerHTML =
       '<p>Мы используем файлы cookie: необходимые — для работы сайта, а с вашего согласия — для статистики посещений ' +
-      '(Яндекс.Метрика) и карты Яндекса. <a href="' + root + 'cookie.html">Подробнее о cookie</a></p>' +
+      '(Яндекс.Метрика), карты и отзывов с Яндекс Карт. <a href="' + root + 'cookie.html">Подробнее о cookie</a></p>' +
       '<div class="cookie-actions">' +
       '<button type="button" class="btn btn-primary" data-consent="all">Принять все</button>' +
       '<button type="button" class="btn btn-outline" data-consent="necessary">Только необходимые</button>' +
