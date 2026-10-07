@@ -425,8 +425,9 @@ header.open .burger .ico-close{display:block}
 .foot-link:hover{color:#fff}
 
 /* team: 3 cards */
-.team-grid{grid-template-columns:repeat(3,1fr);max-width:980px}
-@media(max-width:960px){.team-grid{grid-template-columns:1fr 1fr}}
+.team-grid{grid-template-columns:repeat(3,1fr);max-width:760px;gap:1.6rem}
+@media(max-width:960px){.team-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.team-grid{gap:.7rem}.member b{font-size:.86rem;margin-top:.6rem}.member small{display:block;font-size:.78rem;line-height:1.35;margin-top:.2rem}}
 
 /* footer requisites, inline text links */
 .foot-req{color:#ddcdd5;opacity:.85}
