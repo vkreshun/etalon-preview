@@ -100,7 +100,7 @@ section.pad{padding:5rem 0}
 
 /* process timeline */
 .proc{background:var(--plum);color:#fff}
-.proc .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2.5rem}
+.proc .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
 .proc .step{position:relative;padding-top:1rem}
 .proc .step .num{font-family:var(--serif);font-size:2.4rem;color:#f3b9cd;line-height:1}
 .proc .step h3{color:#fff;font-size:1.1rem;margin:.6rem 0 .3rem}
@@ -189,7 +189,7 @@ footer a{color:#c9b4c0;display:block;padding:.22rem 0}footer a:hover{color:#fff}
 @media(max-width:960px){
   nav.main,.header-phone{display:none}
   .burger{display:block;margin-left:auto}
-  .tiles,.proc .steps,.arts,.team-grid{grid-template-columns:1fr 1fr}
+  .tiles,.arts,.team-grid{grid-template-columns:1fr 1fr}
   .split,.cta .wrap{grid-template-columns:1fr;gap:2rem}
 }
 @media(max-width:600px){.tiles,.proc .steps,.arts{grid-template-columns:1fr}}
