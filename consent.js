@@ -82,6 +82,7 @@
     else if (href.indexOf('mailto:') === 0) goal('email_click');
     else if (/pricelist\.pdf$/.test(href)) goal('pricelist_download');
     else if (href.indexOf('yandex.ru/maps/?rtext') !== -1) goal('route_click');
+    else if (/^https:\/\/(vk\.ru|max\.ru)\//.test(href)) goal('social_click');
   });
 
   var choice = read();
